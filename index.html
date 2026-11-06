@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacent — Fine Writing Instruments</title>
+  <meta name="description" content="Jacent is an upscale boutique for fountain pen enthusiasts, from first-time buyers to serious collectors. Discover Aurora, Montblanc, Pelikan, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- navigation bar-->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><img src="images/web logo.png" alt="Jacent Logo"></div>
+      Jacent
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="brands.html">Brands</a></li>
+      <li><a href="products.html">All products</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon-btn" id="search-btn" title="Search">
+        <i class="ri-search-line"></i>
+      </button>
+      <button class="nav-icon-btn" id="cart-btn" title="Cart">
+        <i class="ri-shopping-bag-line"></i>
+        <span class="cart-badge" id="cart-badge" style="display:none">0</span>
+      </button>
+    </div>
+    <div id="nav-auth-slot" class="nav-auth-slot"></div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Fine Writing Instruments</span>
+      <h1 class="hero-title">
+        The Art of<br><span>Fine Writing</span>
+      </h1>
+      <p class="hero-subtitle">
+        Discover exceptional fountain pens from the world's most prestigious brands
+      </p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-primary">
+          <i class="ri-store-2-line"></i> Shop Collection
+        </a>
+        <a href="#nib" class="btn btn-outline">
+          Explore More
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- feature brands -->
+  <section class="brands-section" id="brands">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Prestigious Houses</div>
+      <h2 class="section-title">Featured Brands</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="brands-grid">
+      <div class="brand-card fade-in">
+        <div class="brand-card-icon">C</div>
+        <h3>Cross</h3>
+        <p>Since 1846, Cross has been creating fine writing instruments with American craftsmanship and timeless design sensibility.</p>
+        <a href="products.html?brand=Cross" class="btn btn-gold-outline">
+          View collection <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="brand-card fade-in">
+        <div class="brand-card-icon">L</div>
+        <h3>Lamy</h3>
+        <p>German engineering that meets contemporary design to marry form and function in every fountain pen.</p>
+        <a href="products.html?brand=LAMY" class="btn btn-gold-outline">
+          View collection <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="brand-card fade-in">
+        <div class="brand-card-icon">M</div>
+        <h3>Montblanc</h3>
+        <p>The pinnacle of luxury writing instruments. Montblanc has been a symbol of excellence since 1906.</p>
+        <a href="products.html?brand=Montblanc" class="btn btn-gold-outline">
+          View collection <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="brands-footer fade-in">
+      <a href="products.html" class="btn btn-primary">
+        View all <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- the art of the nib -->
+  <section class="nib-section" id="nib">
+    <div class="nib-grid">
+      <div class="nib-image-wrap fade-in">
+        <img src="images/dashboard 2 img.jpg" alt="Close-up of a luxury fountain pen nib">
+        <div class="nib-badge">
+          <div class="nib-badge-label">Craftsmanship</div>
+          <div class="nib-badge-value">18k Gold Nib</div>
+        </div>
+      </div>
+
+      <div class="nib-text fade-in">
+        <div class="section-eyebrow">The Writing Experience</div>
+        <h2 class="section-title section-title-light">The Art of the Nib</h2>
+        <div class="divider"></div>
+        <p>
+          In an era of fleeting digital messages, a handwritten note carries unparalleled weight.
+          The right fountain pen is more than a tool — it's an extension of your thought process,
+          demanding a slower, more deliberate approach to communication.
+        </p>
+        <p>
+          Whether you seek the engineered perfection of German design, the artistic flair of Italian
+          craftsmanship, or the obsessive precision of Japanese nib masters, our collection represents
+          the pinnacle of modern writing instruments.
+        </p>
+        <a href="products.html" class="btn btn-primary" style="margin-top:1.5rem">
+          See more <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- why choose jacent -->
+  <section class="why-section">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Our Promise</div>
+      <h2 class="section-title">Why Choose Jacent</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="ri-verified-badge-line"></i></div>
+        <h3>Authentic Products</h3>
+        <p>Every pen is guaranteed authentic and sourced directly from authorized dealers worldwide.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="ri-heart-3-line"></i></div>
+        <h3>Expert Curation</h3>
+        <p>Our collection is carefully selected by fountain pen enthusiasts who truly understand the craft.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon"><i class="ri-award-line"></i></div>
+        <h3>Premium Service</h3>
+        <p>Exceptional customer care and fast, secure shipping worldwide to every collector.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- the collection -->
+  <section class="gallery-section">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">The Collection</div>
+      <h2 class="section-title">Experience Excellence</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in">
+        <img src="images/ee1.jpg" alt="Fine Pens Collection">
+        <span class="gallery-item-label">The Collection — Fine Pens</span>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="images/ee2.jpg" alt="The Craft — Writing Art">
+        <span class="gallery-item-label">The Craft — Writing Art</span>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="images/ee3.jpg" alt="Premium Inks">
+        <span class="gallery-item-label">Premium Ink — Fine Inks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"><img src="images/login_signup logo.png" alt="Jacent Logo"></div>
+          Jacent
+        </a>
+        <p>Writing instruments for those who care. An upscale boutique for fountain pen enthusiasts, from first-time buyers to serious collectors.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="brands.html">Brands A–Z</a></li>
+          <li><a href="cart.html">Your Cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Nib Guide</a></li>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Jacent. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- to cart.html -->
+
+  <script src="js/data.js"></script>
+  <script src="js/pens-data.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

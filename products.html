@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products — Jacent Fine Writing Instruments</title>
+  <meta name="description" content="Browse our complete collection of 30 fine fountain pens from Aurora, Cross, LAMY, Montblanc, Parker, Pelikan, Pilot, Sailor, Visconti, Waterman and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/products-page.css">
+</head>
+<body>
+
+  <!-- navigation bar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><img src="images/web logo.png" alt="Jacent Logo"></div>
+      Jacent
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="brands.html">Brands</a></li>
+      <li><a href="products.html" class="active">All products</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon-btn" id="search-btn" title="Search">
+        <i class="ri-search-line"></i>
+      </button>
+      <button class="nav-icon-btn" id="cart-btn" title="Cart">
+        <i class="ri-shopping-bag-line"></i>
+        <span class="cart-badge" id="cart-badge" style="display:none">0</span>
+      </button>
+    </div>
+    <div id="nav-auth-slot" class="nav-auth-slot"></div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <header class="page-header">
+      <div class="page-header-inner">
+        <div>
+          <h1>All Products</h1>
+          <p>Our complete collection of fine writing instruments.</p>
+        </div>
+        <div>
+          <select class="sort-select" id="sort-select" onchange="applyFilters()">
+            <option value="featured">Feature First</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+            <option value="name">A–Z</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <!-- pens layout -->
+    <div class="products-layout">
+
+      <!-- Sidebar Filters -->
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-section-head">
+            <h3>Brands</h3>
+            <button id="clear-brands" class="sidebar-clear-link" style="display:none"
+                    onclick="clearFilterGroup('filter-brands')">Clear</button>
+          </div>
+          <div id="filter-brands"></div>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-section-head">
+            <h3>Nib Size</h3>
+            <button id="clear-nibs" class="sidebar-clear-link" style="display:none"
+                    onclick="clearFilterGroup('filter-nibs')">Clear</button>
+          </div>
+          <div id="filter-nibs"></div>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-section-head">
+            <h3>Filling System</h3>
+            <button id="clear-fills" class="sidebar-clear-link" style="display:none"
+                    onclick="clearFilterGroup('filter-fills')">Clear</button>
+          </div>
+          <div id="filter-fills"></div>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <button class="btn btn-gold-outline btn-sm" onclick="clearFilters()" style="width:100%">
+          <i class="ri-refresh-line"></i> Clear All Filters
+        </button>
+      </aside>
+
+      <!-- main products -->
+      <main class="products-main">
+        <div class="products-toolbar">
+          <div class="products-count">
+            Showing <span id="product-count">0</span> pens
+          </div>
+        </div>
+        <!-- fliter chips -->
+        <div class="active-filters-bar" id="active-filters-bar" style="display:none"></div>
+        <div class="products-grid" id="products-grid">
+          
+          <div style="grid-column:1/-1;text-align:center;padding:4rem;color:var(--gray)">
+            <i class="ri-loader-4-line" style="font-size:2rem;display:block;margin-bottom:1rem;
+               animation:spin 1s linear infinite"></i>
+            Loading collection...
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon"><img src="images/login_signup logo.png" alt="Jacent Logo"></div>
+            Jacent
+          </a>
+          <p>Writing instruments for those who care. An upscale boutique for fountain pen enthusiasts, from first-time buyers to serious collectors.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html">Brands A–Z</a></li>
+            <li><a href="cart.html">Your Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Nib Guide</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Jacent. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!--  to cart.html -->
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/pens-data.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    // brands filter
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(location.search);
+      const brand  = params.get('brand');
+      if (brand) {
+        // check brands
+        const observer = new MutationObserver(() => {
+          const cb = document.querySelector(`#filter-brands input[value="${brand}"]`);
+          if (cb) {
+            cb.checked = true;
+            applyFilters();
+            observer.disconnect();
+          }
+        });
+        observer.observe(document.getElementById('filter-brands'), { childList: true });
+      }
+    });
+  </script>
+</body>
+</html>

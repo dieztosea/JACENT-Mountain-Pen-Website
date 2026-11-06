@@ -1,0 +1,16 @@
+
+
+body {
+  background-color: var(--cream);
+}
+
+
+.page-wrapper {
+  padding-top: 64px;
+}
+ /* added: animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

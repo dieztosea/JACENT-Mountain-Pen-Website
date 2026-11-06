@@ -1,0 +1,17 @@
+/* added: animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* error msg */
+.auth-error {
+  background-color: #fde8e8;
+  border: 1px solid #f5c2c2;
+  color: #c0392b;
+  font-size: 0.82rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
